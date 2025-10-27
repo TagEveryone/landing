@@ -1,0 +1,329 @@
+{
+  "seo": {
+    "home": {
+      "title": "Tag Everyone - Telegram Bot to mention all group members",
+      "description": "Mention all members of your Telegram group with a single command. Simple, fast and effective. Add the bot for free!",
+      "keywords": "telegram, bot, mention, tag, everyone, group, tag everyone, telegram bot, telegram group"
+    },
+    "privacy": {
+      "title": "Privacy Policy - Tag Everyone Bot",
+      "description": "Privacy policy for Tag Everyone Bot. Learn how we handle your data and protect your privacy."
+    },
+    "terms": {
+      "title": "Terms of Service - Tag Everyone Bot",
+      "description": "Terms and conditions for using the Tag Everyone Bot service. Read the rules and obligations for using our bot."
+    },
+    "cookies": {
+      "title": "Cookie Policy - Tag Everyone Bot",
+      "description": "Cookie policy for Tag Everyone Bot. Learn which cookies we use and how to manage them."
+    },
+    "notFound": {
+      "title": "Page Not Found - Tag Everyone Bot",
+      "description": "The page you are looking for does not exist. Return to the Tag Everyone Bot home page."
+    }
+  },
+  "navbar": {
+    "home": "Home",
+    "features": "Features",
+    "contact": "Contact Us",
+    "cta": "Add Bot",
+    "selectLanguage": "Select Language"
+  },
+  "hero": {
+    "tagline": "Your Ultimate Telegram Bot",
+    "subtitle": "Mention all members of your Telegram group with a single command. Simple, fast, and effective.",
+    "cta": "Add to Your Group",
+    "secondaryCta": "Explore Features",
+    "botMessage": "I have mentioned all group members."
+  },
+  "statistics": {
+    "items": {
+      "users": {
+        "label": "Mentioned Users"
+      },
+      "groups": {
+        "label": "Active Groups"
+      },
+      "active_users": {
+        "label": "Active Users"
+      },
+      "github_stars": {
+        "label": "GitHub Stars"
+      }
+    }
+  },
+  "features": {
+    "title": "Powerful and Intuitive Features",
+    "subtitle": "Everything you need to manage group mentions efficiently and professionally.",
+    "items": {
+      "unlimited_mention": {
+        "title": "Unlimited Mentions",
+        "description": "Mention all group users with a single command, without limitations."
+      },
+      "basic_commands": {
+        "title": "Simple Commands",
+        "description": "Intuitive interface with easy-to-use commands for tagging users."
+      },
+      "basic_webapp": {
+        "title": "Integrated Web App",
+        "description": "Complete web dashboard to easily manage all your groups."
+      },
+      "custom_lists": {
+        "title": "Custom Lists",
+        "description": "Create and manage custom user lists to mention them separately."
+      },
+      "reduced_cooldown": {
+        "title": "Optimized Speed",
+        "description": "Reduced waiting time between mentions for greater efficiency."
+      },
+      "no_activity_logs": {
+        "title": "Privacy Guaranteed",
+        "description": "No activity logs to ensure maximum privacy for users."
+      },
+      "ad_free_experience": {
+        "title": "Clean Experience",
+        "description": "Ad-free interface for an optimal user experience."
+      },
+      "dedicated_instance": {
+        "title": "High Performance",
+        "description": "Dedicated resources to ensure top speed and stability."
+      },
+      "community_support": {
+        "title": "Open Source",
+        "description": "Fully open source project with active community support."
+      }
+    },
+    "badges": {
+      "soon": "Coming Soon"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Add TagEveryone to your Telegram Group and start managing mentions professionally.",
+      "primary": "Add Bot",
+      "secondary": "Contact Us"
+    }
+  },
+  "footer": {
+    "description": "The complete solution to easily manage your tags and mentions on Telegram and other platforms.",
+    "product": {
+      "title": "Product",
+      "links": {
+        "features": "Features"
+      }
+    },
+    "support": {
+      "title": "Support",
+      "links": {
+        "docs": "Documentation",
+        "contact": "Contact"
+      }
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to receive updates on new features and special offers.",
+      "placeholder": "Your email",
+      "button": "Subscribe"
+    },
+    "copyright": "TagEveryone. All rights reserved.",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Do you have questions or need assistance? Contact us, and we will be happy to help you.",
+    "alternativesTitle": "Other Contact Methods",
+    "form": {
+      "title": "Send a Message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "subject": "Subject",
+      "button": "Send Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Your email",
+      "subjectPlaceholder": "Select a subject",
+      "messagePlaceholder": "Your message",
+      "sending": "Sending...",
+      "send": "Send",
+      "success": "Your message has been sent successfully.",
+      "error": "An error occurred while sending your message. Please try again later.",
+      "emailInvalid": "Please enter a valid email address.",
+      "messageInvalid": "The message must contain at least 10 characters.",
+      "subjects": {
+        "general": "General Inquiry",
+        "support": "Technical Support",
+        "billing": "Billing",
+        "partnership": "Partnership",
+        "other": "Other"
+      }
+    },
+    "methods": {
+      "telegram": {
+        "title": "Telegram",
+        "description": "Contact us on Telegram for immediate assistance.",
+        "action": "Open Chat"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Send an email to our team for questions and assistance.",
+        "action": "Send Email"
+      },
+      "social": {
+        "title": "Social Media",
+        "description": "Follow us on social media to stay updated on the latest news.",
+        "action": "Follow Us"
+      }
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you are looking for does not exist or has been moved.",
+    "goHome": "Go to Home",
+    "goBack": "Go Back"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "backToHome": "Back to Home",
+    "intro": {
+      "title": "Introduction",
+      "description": "This Privacy Policy describes how TagEveryone collects, uses, and protects the personal information of users who use our Telegram bot."
+    },
+    "dataCollected": {
+      "title": "Data Collected",
+      "description": "We collect the following information:",
+      "items": [
+        "Telegram user ID and username",
+        "Group ID and group information",
+        "Commands used and timestamps",
+        "Language preferences and bot settings"
+      ]
+    },
+    "dataUsage": {
+      "title": "How We Use Your Data",
+      "description": "We use the collected data to:",
+      "items": [
+        "Provide and improve bot services",
+        "Personalize user experience",
+        "Analyze usage to optimize features",
+        "Prevent abuse and ensure security"
+      ]
+    },
+    "dataSharing": {
+      "title": "Data Sharing",
+      "description": "We do not sell or share your personal data with third parties, except as required by law or to provide essential bot services through Telegram's API."
+    },
+    "security": {
+      "title": "Security",
+      "description": "We implement appropriate security measures to protect your data from unauthorized access, alteration, disclosure, or destruction."
+    },
+    "userRights": {
+      "title": "Your Rights",
+      "description": "You have the right to:",
+      "items": [
+        "Access your personal data",
+        "Request correction of inaccurate data",
+        "Request deletion of your data",
+        "Object to the processing of your data"
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "For any questions regarding this Privacy Policy, contact us through the bot's official channels or via email."
+    }
+  },
+  "tos": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated",
+    "backToHome": "Back to Home",
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "description": "By using TagEveryone, you agree to be bound by these Terms of Service. If you do not accept these terms, please do not use the bot."
+    },
+    "serviceUse": {
+      "title": "Use of Service",
+      "description": "You agree to use TagEveryone responsibly and in accordance with the following guidelines:",
+      "items": [
+        "Do not use the bot for illegal or unauthorized purposes",
+        "Do not attempt to violate or compromise the bot's security",
+        "Respect usage limits and Telegram's rules",
+        "Do not use the bot to send spam or inappropriate content"
+      ]
+    },
+    "prohibited": {
+      "title": "Prohibited Behaviors",
+      "description": "It is prohibited to:",
+      "items": [
+        "Use the bot to harass, threaten, or defame other users",
+        "Attempt to gain unauthorized access to the bot's systems",
+        "Distribute malware or harmful content through the bot",
+        "Violate intellectual property rights"
+      ]
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "description": "TagEveryone is provided 'as is' without warranties of any kind. We are not responsible for any damages arising from the use of the bot, including but not limited to data loss or service interruptions."
+    },
+    "modifications": {
+      "title": "Service Modifications",
+      "description": "We reserve the right to modify, suspend, or discontinue the service at any time without notice. We also reserve the right to modify these Terms of Service at any time."
+    },
+    "termination": {
+      "title": "Termination",
+      "description": "We reserve the right to terminate or suspend access to the bot for any user who violates these Terms of Service or Telegram's policies."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "For questions regarding these Terms of Service, contact us through the bot's official channels."
+    }
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated",
+    "backToHome": "Back to Home",
+    "whatAre": {
+      "title": "What Are Cookies",
+      "description": "Cookies are small text files that are stored on your device when you visit our website. They are used to improve your experience and analyze site usage."
+    },
+    "howWeUse": {
+      "title": "How We Use Cookies",
+      "description": "We use cookies to remember your preferences, such as the selected language, and to analyze website traffic in order to improve our services."
+    },
+    "types": {
+      "title": "Types of Cookies",
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "These cookies are necessary for the basic functioning of the site and cannot be disabled. Includes cookies for session management and preferences."
+      },
+      "preferences": {
+        "title": "Preference Cookies",
+        "description": "These cookies store your preferences, such as the selected language and display settings."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "These cookies help us understand how users interact with the site, allowing us to improve the user experience."
+      }
+    },
+    "management": {
+      "title": "Cookie Management",
+      "description": "You can manage your cookie preferences through your browser settings:",
+      "items": [
+        "Block all cookies",
+        "Accept only first-party cookies",
+        "Delete cookies when closing the browser",
+        "Receive a notification before new cookies are stored"
+      ]
+    },
+    "thirdParty": {
+      "title": "Third-Party Cookies",
+      "description": "Some cookies may be set by third-party services that appear on our pages, such as analytics services or embedded content."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "For questions regarding this Cookie Policy, contact us through official channels."
+    }
+  }
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home Page - Italiano (default) -->
+  <url>
+    <loc>https://tageveryone.xyz/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tageveryone.xyz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tageveryone.xyz/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tageveryone.xyz/"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Home Page - English -->
+  <url>
+    <loc>https://tageveryone.xyz/en</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tageveryone.xyz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tageveryone.xyz/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tageveryone.xyz/"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Privacy Policy - Italiano -->
+  <url>
+    <loc>https://tageveryone.xyz/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tageveryone.xyz/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tageveryone.xyz/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tageveryone.xyz/privacy-policy"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Privacy Policy - English -->
+  <url>
+    <loc>https://tageveryone.xyz/en/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tageveryone.xyz/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tageveryone.xyz/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tageveryone.xyz/privacy-policy"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Terms of Service - Italiano -->
+  <url>
+    <loc>https://tageveryone.xyz/terms-of-service</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tageveryone.xyz/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tageveryone.xyz/en/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tageveryone.xyz/terms-of-service"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Terms of Service - English -->
+  <url>
+    <loc>https://tageveryone.xyz/en/terms-of-service</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tageveryone.xyz/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tageveryone.xyz/en/terms-of-service"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tageveryone.xyz/terms-of-service"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Cookie Policy - Italiano -->
+  <url>
+    <loc>https://tageveryone.xyz/cookie-policy</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tageveryone.xyz/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tageveryone.xyz/en/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tageveryone.xyz/cookie-policy"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Cookie Policy - English -->
+  <url>
+    <loc>https://tageveryone.xyz/en/cookie-policy</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tageveryone.xyz/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tageveryone.xyz/en/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tageveryone.xyz/cookie-policy"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

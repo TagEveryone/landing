@@ -1,0 +1,10 @@
+# robots.txt for tageveryone.it
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tageveryone.xyz/sitemap.xml
+
+# Disallow admin or private paths (if any in the future)
+# Disallow: /admin/
