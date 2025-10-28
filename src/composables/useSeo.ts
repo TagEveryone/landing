@@ -13,7 +13,7 @@ interface SeoConfig {
 export function useSeo(config: SeoConfig) {
   const { locale } = useI18n();
   const route = useRoute();
-  const baseUrl = 'https://tageveryone.xyz'; // Sostituisci con il tuo dominio
+  const baseUrl = 'https://www.tageveryone.xyz'; // Sostituisci con il tuo dominio
 
   // Helper per ottenere il valore da string o ComputedRef
   const getValue = (value: string | ComputedRef<string>): string => {
