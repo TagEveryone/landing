@@ -1,7 +1,7 @@
 {
   "seo": {
     "home": {
-      "title": "Tag Everyone - Bot Telegram per menzionare tutti i membri del gruppo",
+      "title": "Tag Everyone - Menziona tutti i membri di un gruppo",
       "description": "Menziona tutti i membri del tuo gruppo Telegram con un solo comando. Semplice, veloce ed efficace. Aggiungi il bot gratuitamente!",
       "keywords": "telegram, bot, menziona, tag, everyone, gruppo, tag everyone, telegram bot, gruppo telegram"
     },
@@ -198,8 +198,7 @@
       "items": [
         "ID utente Telegram e nome utente",
         "ID del gruppo e informazioni del gruppo",
-        "Comandi utilizzati e timestamp",
-        "Preferenze di lingua e impostazioni del bot"
+        "Comandi utilizzati e timestamp"
       ]
     },
     "dataUsage": {

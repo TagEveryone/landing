@@ -14,9 +14,9 @@ interface Statistic {
 const statistics: Statistic[] = [
     {
         key: 'users',
-        value: '487k+',
+        value: '490k+',
         icon: AtSymbolIcon,
-        numericValue: 487,
+        numericValue: 490,
         suffix: 'k+'
     },
     {

@@ -198,8 +198,7 @@
       "items": [
         "Telegram user ID and username",
         "Group ID and group information",
-        "Commands used and timestamps",
-        "Language preferences and bot settings"
+        "Commands used and timestamps"
       ]
     },
     "dataUsage": {

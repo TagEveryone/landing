@@ -99,7 +99,7 @@ const features: Feature[] = [
           <h3 class="text-2xl font-bold text-white mb-3">{{ $t('features.cta.title') }}</h3>
           <p class="text-lg text-gray-300 mb-6">{{ $t('features.cta.subtitle') }}</p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="https://discord.com/oauth2/authorize?client_id=1240265046502760558" target="_blank"
+            <a href="https://matt05.it/tag_everyone?utm_source=landing&utm_medium=website&utm_campaign=add_bot" target="_blank"
               class="group inline-flex items-center px-6 py-3 bg-linear-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/50 hover:scale-105 transform">
               {{ $t('features.cta.primary') }}
               <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

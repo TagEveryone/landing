@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
-
 const { t } = useI18n();
 
 // Stati del form
@@ -15,15 +14,15 @@ const error = ref(false);
 
 // Stato per tenere traccia dei campi toccati (per mostrare errori solo dopo interazione)
 const touchedFields = ref({
-  name: false,
-  email: false,
-  subject: false,
-  message: false
+    name: false,
+    email: false,
+    subject: false,
+    message: false
 });
 
 // Segna un campo come "toccato" quando l'utente modifica il valore
 const markAsTouched = (field: keyof typeof touchedFields.value) => {
-  touchedFields.value[field] = true;
+    touchedFields.value[field] = true;
 };
 
 // Definizione delle interfacce
@@ -104,39 +103,47 @@ const isFormValid = computed(() => {
         message.value.trim().length >= 10;
 });
 
-// Invio del form
+// Invio del form (POST a Pageclip)
 const submitForm = async () => {
     // Segna tutti i campi come toccati in caso di tentativo di invio
     Object.keys(touchedFields.value).forEach(field => {
         touchedFields.value[field as keyof typeof touchedFields.value] = true;
     });
-    
+
     if (!isFormValid.value) return;
 
     submitting.value = true;
 
-    try {
-        // Simuliamo una chiamata API
-        await new Promise(resolve => setTimeout(resolve, 1500));
+    Pageclip.send('1a1ME8taR2bGw3pqgVjMIIi8awbMJIhB', 'default', {
+        name: name.value,
+        email: email.value,
+        subject: subject.value,
+        message: message.value
+    }, function (success: boolean, response: any) {
+        if (success) {
+            submitted.value = true;
+            error.value = false;
 
-        // Resetta il form dopo l'invio
-        name.value = '';
-        email.value = '';
-        subject.value = '';
-        message.value = '';
-        
-        // Resetta anche lo stato dei campi toccati
-        Object.keys(touchedFields.value).forEach(field => {
-            touchedFields.value[field as keyof typeof touchedFields.value] = false;
-        });
+            // Reset form fields
+            name.value = '';
+            email.value = '';
+            subject.value = '';
+            message.value = '';
 
-        submitted.value = true;
-        error.value = false;
-    } catch (e) {
-        error.value = true;
-    } finally {
-        submitting.value = false;
-    }
+            submitting.value = false;
+
+            // Reset touched fields
+            touchedFields.value = {
+                name: false,
+                email: false,
+                subject: false,
+                message: false
+            };
+        } else {
+            throw new Error('Pageclip response error');
+        }
+    });
+
 };
 
 // Icone SVG per i metodi di contatto
@@ -186,8 +193,7 @@ const iconSvgs: { [key: string]: string } = {
                                         <label for="name" class="block text-sm font-medium text-gray-300 mb-1">
                                             {{ $t('contact.form.name') }}
                                         </label>
-                                        <input type="text" id="name" v-model="name"
-                                            @blur="markAsTouched('name')"
+                                        <input type="text" id="name" v-model="name" @blur="markAsTouched('name')"
                                             class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                             :placeholder="$t('contact.form.namePlaceholder')" required />
                                     </div>
@@ -197,17 +203,16 @@ const iconSvgs: { [key: string]: string } = {
                                         <label for="email" class="block text-sm font-medium text-gray-300 mb-1">
                                             {{ $t('contact.form.email') }}
                                         </label>
-                                        <input type="email" id="email" v-model="email"
-                                            @blur="markAsTouched('email')"
+                                        <input type="email" id="email" v-model="email" @blur="markAsTouched('email')"
                                             @input="markAsTouched('email')"
                                             class="w-full px-4 py-2 rounded-md bg-gray-700 border text-white focus:outline-none focus:ring-2"
                                             :class="[
-                                                touchedFields.email && !isEmailValid ? 
-                                                'border-red-500 focus:ring-red-500' : 
-                                                'border-gray-600 focus:ring-indigo-500'
-                                            ]"
-                                            :placeholder="$t('contact.form.emailPlaceholder')" required />
-                                        <p v-if="touchedFields.email && !isEmailValid" class="mt-1 text-sm text-red-500">
+                                                touchedFields.email && !isEmailValid ?
+                                                    'border-red-500 focus:ring-red-500' :
+                                                    'border-gray-600 focus:ring-indigo-500'
+                                            ]" :placeholder="$t('contact.form.emailPlaceholder')" required />
+                                        <p v-if="touchedFields.email && !isEmailValid"
+                                            class="mt-1 text-sm text-red-500">
                                             {{ $t('contact.form.emailInvalid') }}
                                         </p>
                                     </div>
@@ -217,12 +222,13 @@ const iconSvgs: { [key: string]: string } = {
                                         <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">
                                             {{ $t('contact.form.subject') }}
                                         </label>
-                                        <select id="subject" v-model="subject"
-                                            @blur="markAsTouched('subject')"
+                                        <select id="subject" v-model="subject" @blur="markAsTouched('subject')"
                                             class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                             required>
-                                            <option value="" disabled selected>{{ $t('contact.form.subjectPlaceholder') }}</option>
-                                            <option v-for="option in contactSubjects" :key="option.value" :value="option.value">
+                                            <option value="" disabled selected>{{ $t('contact.form.subjectPlaceholder')
+                                                }}</option>
+                                            <option v-for="option in contactSubjects" :key="option.value"
+                                                :value="option.value">
                                                 {{ option.label }}
                                             </option>
                                         </select>
@@ -234,16 +240,16 @@ const iconSvgs: { [key: string]: string } = {
                                             {{ $t('contact.form.message') }}
                                         </label>
                                         <textarea id="message" v-model="message" rows="5"
-                                            @blur="markAsTouched('message')"
-                                            @input="markAsTouched('message')"
+                                            @blur="markAsTouched('message')" @input="markAsTouched('message')"
                                             class="w-full px-4 py-2 rounded-md bg-gray-700 border text-white focus:outline-none focus:ring-2"
                                             :class="[
-                                                touchedFields.message && !isMessageValid ? 
-                                                'border-red-500 focus:ring-red-500' : 
-                                                'border-gray-600 focus:ring-indigo-500'
-                                            ]"
-                                            :placeholder="$t('contact.form.messagePlaceholder')" required></textarea>
-                                        <p v-if="touchedFields.message && !isMessageValid" class="mt-1 text-sm text-red-500">
+                                                touchedFields.message && !isMessageValid ?
+                                                    'border-red-500 focus:ring-red-500' :
+                                                    'border-gray-600 focus:ring-indigo-500'
+                                            ]" :placeholder="$t('contact.form.messagePlaceholder')"
+                                            required></textarea>
+                                        <p v-if="touchedFields.message && !isMessageValid"
+                                            class="mt-1 text-sm text-red-500">
                                             {{ $t('contact.form.messageInvalid') }}
                                         </p>
                                     </div>
@@ -255,8 +261,7 @@ const iconSvgs: { [key: string]: string } = {
                                             :class="{
                                                 'hover:bg-indigo-700 hover:cursor-pointer': isFormValid && !submitting,
                                                 'opacity-60 cursor-not-allowed': !isFormValid || submitting
-                                            }"
-                                            :disabled="!isFormValid || submitting">
+                                            }" :disabled="!isFormValid || submitting">
                                             <svg v-if="submitting" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
@@ -273,7 +278,8 @@ const iconSvgs: { [key: string]: string } = {
 
                             <!-- Alternative contact methods -->
                             <div>
-                                <h2 class="text-2xl font-bold text-white mb-6">{{ $t('contact.alternativesTitle') }}</h2>
+                                <h2 class="text-2xl font-bold text-white mb-6">{{ $t('contact.alternativesTitle') }}
+                                </h2>
 
                                 <div class="space-y-6">
                                     <div v-for="(method, index) in contactMethods" :key="index"
@@ -310,15 +316,16 @@ const iconSvgs: { [key: string]: string } = {
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .animate-spin {
-  animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
 }
 </style>
