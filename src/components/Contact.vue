@@ -119,7 +119,7 @@ const submitForm = async () => {
         email: email.value,
         subject: subject.value,
         message: message.value
-    }, function (success: boolean, response: any) {
+    }, function (success: boolean, _: any) {
         if (success) {
             submitted.value = true;
             error.value = false;
@@ -285,7 +285,7 @@ const iconSvgs: { [key: string]: string } = {
                                     <div v-for="(method, index) in contactMethods" :key="index"
                                         class="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-indigo-500 transition-colors duration-300 contact-method">
                                         <div class="flex items-start">
-                                            <div class="flex-shrink-0 bg-indigo-900/50 p-3 rounded-lg mr-4">
+                                            <div class="shrink-0 bg-indigo-900/50 p-3 rounded-lg mr-4">
                                                 <div class="text-indigo-400" v-html="iconSvgs[method.icon]"></div>
                                             </div>
                                             <div>
