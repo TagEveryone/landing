@@ -66,7 +66,7 @@ const legalLinks: FooterLink[] = [
         <!-- Logo e info -->
         <div class="lg:col-span-1">
           <div class="flex items-center mb-4">
-            <img src="../assets/logo.png" alt="Logo" class="h-10 w-10 rounded-full mr-3" />
+            <img src="/logo.png" alt="Logo" class="h-10 w-10 rounded-full mr-3" />
             <h3 class="text-xl font-bold text-indigo-400">TagEveryone</h3>
           </div>
           <p class="text-gray-400 mb-4">{{ $t('footer.description') }}</p>

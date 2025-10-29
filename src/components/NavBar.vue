@@ -115,7 +115,7 @@ const navLinks = [
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
       <div class="flex items-center space-x-2">
-        <img src="../assets/logo.png" alt="Logo" class="h-8 w-8 rounded-full" />
+        <img src="/logo.png" alt="Logo" class="h-8 w-8 rounded-full" />
         <router-link to="/" class="text-xl font-bold text-indigo-400">TagEveryone</router-link>
       </div>
 

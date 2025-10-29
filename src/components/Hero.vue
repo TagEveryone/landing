@@ -64,7 +64,7 @@ const { handleHashClick } = useScrollTo();
                                     <!-- Chat Header -->
                                     <div class="p-3 bg-gray-900/80 backdrop-blur-sm rounded-t-2xl border-b border-gray-700/50">
                                         <div class="flex items-center">
-                                            <img src="../assets/logo.png" alt="Logo" class="w-8 h-8 rounded-full mr-3" />
+                                            <img src="/logo.png" alt="Logo" class="w-8 h-8 rounded-full mr-3" />
                                             <div class="font-semibold text-white">TagEveryone Bot</div>
                                         </div>
                                     </div>
