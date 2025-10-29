@@ -13,7 +13,6 @@ useSeo({
   title: computed(() => t('seo.home.title')),
   description: computed(() => t('seo.home.description')),
   keywords: computed(() => t('seo.home.keywords')),
-  ogImage: '/og-image.png', // Assicurati di avere un'immagine in public/
   ogType: 'website'
 });
 </script>

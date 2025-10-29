@@ -6,7 +6,6 @@ interface SeoConfig {
   title: string | ComputedRef<string>;
   description: string | ComputedRef<string>;
   keywords?: string | ComputedRef<string>;
-  ogImage?: string;
   ogType?: string;
 }
 
@@ -107,19 +106,15 @@ export function useSeo(config: SeoConfig) {
     updateProperty('og:url', `${baseUrl}${route.path}`);
     updateProperty('og:type', config.ogType || 'website');
     updateProperty('og:locale', locale.value === 'it' ? 'it_IT' : 'en_US');
+  
+    updateProperty('og:image', `${baseUrl}/banner.png`);
     
-    if (config.ogImage) {
-      updateProperty('og:image', config.ogImage);
-    }
-
     // Twitter Card
     updateMeta('twitter:card', 'summary_large_image');
     updateMeta('twitter:title', getValue(config.title));
     updateMeta('twitter:description', getValue(config.description));
-    if (config.ogImage) {
-      updateMeta('twitter:image', config.ogImage);
-    }
-
+    updateMeta('twitter:image', `${baseUrl}/banner.png`);
+  
     // Hreflang
     updateHreflang();
   };
