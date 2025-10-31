@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import i18n from '../i18n';
 
 const supportedLocales = ['it', 'en'];
-const defaultLocale = 'it';
+const defaultLocale = 'en';
 
 const routes = [
   {
