@@ -5,64 +5,48 @@
       xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  
-  <!-- Home Page - Italiano (default) -->
   <url>
     <loc>https://www.tageveryone.xyz/it</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Home Page - English -->
   <url>
     <loc>https://www.tageveryone.xyz/en</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Privacy Policy - Italiano -->
   <url>
     <loc>https://www.tageveryone.xyz/it/privacy-policy</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Privacy Policy - English -->
   <url>
     <loc>https://www.tageveryone.xyz/en/privacy-policy</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Terms of Service - Italiano -->
   <url>
     <loc>https://www.tageveryone.xyz/it/terms-of-service</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Terms of Service - English -->
   <url>
     <loc>https://www.tageveryone.xyz/en/terms-of-service</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Cookie Policy - Italiano -->
   <url>
     <loc>https://www.tageveryone.xyz/it/cookie-policy</loc>
     <lastmod>2025-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Cookie Policy - English -->
   <url>
     <loc>https://www.tageveryone.xyz/en/cookie-policy</loc>
     <lastmod>2025-10-31</lastmod>
