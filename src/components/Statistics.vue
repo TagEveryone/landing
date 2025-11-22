@@ -14,30 +14,30 @@ interface Statistic {
 const statistics: Statistic[] = [
     {
         key: 'users',
-        value: '490k+',
+        value: '550k+',
         icon: AtSymbolIcon,
-        numericValue: 490,
+        numericValue: 550,
         suffix: 'k+'
     },
     {
         key: 'groups',
-        value: '1.7k+',
+        value: '1.8k+',
         icon: UserGroupIcon,
-        numericValue: 1.7,
+        numericValue: 1.8,
         suffix: 'k+'
     },
     {
         key: 'active_users',
-        value: '45k+',
+        value: '55k+',
         icon: ChartBarIcon,
-        numericValue: 45,
+        numericValue: 55,
         suffix: 'k+'
     },
     {
         key: 'github_stars',
-        value: '15+',
+        value: '19+',
         icon: StarIcon,
-        numericValue: 15,
+        numericValue: 19,
         suffix: '+'
     }
 ];
